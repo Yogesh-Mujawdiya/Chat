@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Responsive Login + Signup form </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MY Chat</title>
+    <link rel="stylesheet" href="css//style.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="form-modal">
+        <div class="form-toggle">
+            <button id="login-toggle" onclick="toggleLogin()">log in</button>
+            <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+        </div>
+
+        <div id="login-form">
+            <form action="login"  id="login" method="POST">
+                <input type="text" placeholder="Enter Username" name="id"/>
+                <input type="password" placeholder="Enter Password" name="password"/>
+                <button type="submit" class="btn login">login</button>
+            </form>
+        </div>
+
+        <div id="signup-form">
+            <form action="signup" id="signup" method="POST">
+                <input type="text" placeholder="Enter your Name" name="name"/>
+                <input type="text" placeholder="Choose Username" name="id"/>
+                <input type="password" placeholder="Create Password" name="password"/>
+                <button type="submit" class="btn signup">create account</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
